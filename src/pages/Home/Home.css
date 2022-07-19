@@ -1,0 +1,99 @@
+:root {
+    --color-dark: #000000;
+    --color-light-theam: #FDE6EE;
+    --color-light: #ffffff;
+}
+
+/* home page layout */
+.main-container-home-page {
+    display: flex;
+    gap: 5rem;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-dark);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    height: 200px;
+    width: auto;
+    background: var(--color-light-theam);
+
+    border-radius: 10px;
+   
+}
+
+
+.section-2 {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+   
+}
+
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: auto;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    background-image: url("https://d3nn873nee648n.cloudfront.net/900x600/10127/19-SM274214.jpg");
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+
+/* -----end of home page layout----- */
+
+
+/* page style */
+.btn-section-1 {
+    margin-top: 1rem;
+    border: none;
+    padding: 5px;
+    width: 8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-section-1:hover {
+    transform: scale(1.2);
+    background: var(--color-dark);
+    transition: background 0.5s;
+    color: var(--color-light);
+}
+
+.home-page-img {
+    height: 14rem;
+    width: auto;
+}
+
+
+.category-btn {
+    border: none;
+    padding: 5px;
+    width: min(5rem);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.category-btn:hover {
+    transform: scale(1.2);
+    background: var(--color-dark);
+    transition: background 0.5s;
+    color: var(--color-light);
+
+}
+
+.txt-big{
+    font-size: 2rem;
+}
+/* -----end of page style----- */
