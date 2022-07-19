@@ -18,13 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="/mockman" element={<Mockman />} />
-       
-        
-
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
-
-
         {/* setup private path*/}
 
         <Route
