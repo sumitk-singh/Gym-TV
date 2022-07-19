@@ -1,0 +1,12 @@
+.main-container-watch-later-page{
+    display: flex;
+    gap: 5rem;
+}
+
+.watch-later-section-1{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}

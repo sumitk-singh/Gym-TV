@@ -4,17 +4,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+import { makeServer } from "./server";
+
 import { BrowserRouter as Router } from "react-router-dom";
 import PlaylistProvider from './contexts/playlistContext';
+import { AuthProvider } from './contexts/Authcontext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// running server
+makeServer();
 
 root.render(
   <React.StrictMode>
-    <PlaylistProvider>
-       <Router>
+    <Router>
+    <AuthProvider>
+    <PlaylistProvider> 
       <App />
-    </Router>
     </PlaylistProvider>
+    </AuthProvider>
+    </Router>
   </React.StrictMode>
 );
 

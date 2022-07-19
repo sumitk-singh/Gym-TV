@@ -16,7 +16,7 @@ body{
     background-color: var(--light-gray);
     position: relative; 
     bottom:0;
-    margin-top: min(10rem);
+    margin-top: min(20rem);
 }
 
 ul li {

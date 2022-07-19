@@ -34,8 +34,21 @@ const Home = () => {
           {/* end of section-1 */}
 
 
-          <h2 className='txt-center'>Video Categories</h2>
-          
+          <h3>Video Categories:</h3>
+          {/* section 2 */}
+          <section className="section-2">
+
+            {/* <Link to={`/explore`}><button className='category-btn'>Chest</button></Link>
+            <Link to={`/explore`}><button className='category-btn'>Biceps</button></Link>
+            <Link to={`/explore`}><button className='category-btn'>Shoulder</button></Link>
+            <Link to={`/explore`}><button className='category-btn'>Back</button></Link>
+            <Link to={`/explore`}><button className='category-btn'>Triceps</button></Link>
+            <Link to={`/explore`}><button className='category-btn'>Thai</button></Link>
+            <Link to={`/explore`}><button className='category-btn'>Abs</button></Link>
+            <button className='category-btn'>Diet</button> */}
+          </section>
+
+          {/* end of section 2 */}
 
           {/* section 3 */}
           <section className="section-3">
