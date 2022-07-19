@@ -1,0 +1,54 @@
+/* color variables */
+
+:root {
+    --light-theam-color: #ffd9c9;
+    --dark-theam-color: #ff4800;
+}
+
+/* *** */
+
+/* simple nav-bar */
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 1.875rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+
+
+.nav-bar-icons-list,
+.nav-bar-links-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    height: 4rem;
+    width: auto;
+}
+
+.nav-bar-links-list>li:hover {
+    cursor: pointer;
+    color: var(--dark-theam-color);
+    transition: color 0.5s;
+}
+
+.nav-bar-icons-list>li:hover {
+    cursor: pointer;
+    color: var(--dark-theam-color);
+    transition: color 0.5s;
+}
+
+
+/* *** */
