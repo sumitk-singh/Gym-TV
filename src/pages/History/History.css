@@ -1,0 +1,42 @@
+
+:root{
+    --color-orange:#ff4d00;
+    --color-light:#ffffff;
+}
+
+/* page layout */
+
+.main-container-history-page{
+    display: flex;
+    gap: 5rem;
+}
+
+
+.history-page-section-1{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+/* -----end of page layout----- */
+
+
+
+/* page style */
+.float-right>button{
+    float: right;
+    background-color: var(--color-orange);
+    color: var(--color-light);
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.section-b{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+/* -----end of page style----- */

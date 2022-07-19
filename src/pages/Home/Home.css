@@ -14,18 +14,31 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    color: var(--color-light);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    height: 30rem;
+    width: auto;
+    border-radius: 10px;
+    background-image: url("https://d3nn873nee648n.cloudfront.net/900x600/10127/19-SM274214.jpg");
+    background-attachment: fixed;
+
+}
+
+.txt-display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-light-theam);
     color: var(--color-dark);
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    height: 200px;
-    width: auto;
-    background: var(--color-light-theam);
-
     border-radius: 10px;
-   
-}
+    opacity: 0.9;
 
+}
 
 .section-2 {
     display: flex;
@@ -35,7 +48,8 @@
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
-   
+
+
 }
 
 .section-3 {
@@ -93,7 +107,8 @@
 
 }
 
-.txt-big{
+.txt-big {
     font-size: 2rem;
 }
+
 /* -----end of page style----- */

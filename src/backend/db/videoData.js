@@ -1,4 +1,4 @@
-import {bigArms, chestWorkout, shoulderWorkout, vCut, weightLift} from "../../assets/images/videoThumbnail/index";
+import {bigArms, chestWorkout, shoulderWorkout, vCut, weightLift, dietimg} from "../../assets/images/videoThumbnail/index";
 
 export const videoData = [
     {
@@ -21,7 +21,7 @@ export const videoData = [
       title: "4 Shoulder Exercises Beginners Should Avoid | What To Do Instead | Yatinder Singh",
   
       date: "Apr 8, 2021",
-      views: "2,048,242 views",
+      views: "204k views",
       image: shoulderWorkout
     },
     {
@@ -39,5 +39,14 @@ export const videoData = [
       date: "Apr 19, 2021",
       views: "54k views",
       image: weightLift
+    },
+
+    {
+      id: "kN3UC4fQN8M",
+      title: "Vegetarian Diet For Muscle Building | Yatinder Singh",
+  
+      date: "Jun 21, 2019",
+      views: "103k views",
+      image: dietimg
     }
   ];

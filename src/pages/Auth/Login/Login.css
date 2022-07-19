@@ -1,0 +1,30 @@
+
+.login-page-container{
+    display: flex;
+    flex-direction: column;
+   align-self: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 3rem;
+    border: 1px solid;
+    width: 30%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-left: 33%;
+}
+
+input{
+width: 14rem;
+border-radius: 10px;
+}
+
+#login-btn{
+    border: none;
+    cursor:pointer;
+    width: 15rem;
+    border-radius: 10px;
+}
+
+.sign-up-txt{
+    cursor: pointer;
+}

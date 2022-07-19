@@ -1,24 +1,3 @@
-// import './CreateNewPlaylist.css';
-
-// const CreateNewPlaylist = () => {
-//     return (
-//         <>
-//             <div className='createNewPlaylist-page-main-container'>
-//                 <div className='createNewPlaylist-page-sub-container'>
-//                     <h3>Create New Playlist</h3>
-//                     <label htmlFor="">Playlist Name</label>
-//                     <input type="text" />
-//                     <button>Create Playlist</button>
-//                 </div>
-//             </div>
-//         </>
-//     )
-// }
-
-// export default CreateNewPlaylist;
-
-
-
 
 import React, { useRef, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
