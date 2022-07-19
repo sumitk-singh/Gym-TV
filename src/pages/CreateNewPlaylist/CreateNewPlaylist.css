@@ -1,0 +1,43 @@
+
+:root{
+    --color-orange:#ff5405;
+    --color-light:#ffffff;
+    --color-gray:#454545;
+}
+
+/* page layout */
+.createNewPlaylist-page-main-container{
+display: flex;
+justify-content: center;
+}
+
+.createNewPlaylist-page-sub-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    width: 15rem;
+    height: auto;
+    margin-top: 5rem;
+}
+
+/* end of page layout */
+
+/* page style */
+h3{
+text-align: center;
+}
+
+input,button{
+    padding: 5px;
+}
+
+button{
+    background-color: var(--color-orange);
+    color: var(--color-light);
+}
+/* end of page style */
+
+
+/*---------------? */
+

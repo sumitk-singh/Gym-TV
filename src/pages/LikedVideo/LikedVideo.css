@@ -1,0 +1,12 @@
+.main-container-liked-video{
+    display: flex;
+    gap: 5rem;
+}
+
+.liked-video-section-1{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}

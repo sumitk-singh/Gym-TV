@@ -1,0 +1,21 @@
+.main-container-playlistlisting
+{
+    display: flex;
+    gap: 5rem;
+   
+}
+
+
+.playlist-page-section-1{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-left: 0;
+}
+
+
+
+.float-right{
+    float: right;
+}
