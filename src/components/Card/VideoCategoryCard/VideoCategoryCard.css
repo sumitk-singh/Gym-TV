@@ -1,0 +1,46 @@
+:root {
+    --dark-black: #000000;
+    --light: #fcfcfc;
+    --light-gray-card: #e6e6e6dc;
+    --theam-color-primary: #F50057;
+}
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 18rem;
+    background-color: var(--light-gray-card);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card-text,
+p {
+    text-align: center;
+    padding-left: 5px;
+}
+
+#video-card-btn {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-primary {
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--theam-color-primary);
+    color: var(--light);
+    border-radius: 10px;
+    width: 100%;
+    border-color: transparent;
+}
+
+.btn-primary:hover {
+    padding: 5px;
+    background-color: var(--dark-black);
+    color: var(--light);
+    transition: background 0.6s;
+}

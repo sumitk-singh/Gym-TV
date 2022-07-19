@@ -1,0 +1,50 @@
+/* video page layout */
+
+.video-page-main-section{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section-1 section-2";
+}
+
+.video-page-section-1{
+    grid-area: section-1;
+    margin-left: 1rem;
+   
+}
+
+.video-page-section-2{
+    margin-left: 5rem;
+    grid-area: section-2;
+    margin-bottom: 1rem;
+    
+}
+
+.video-page-section-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* -----end of video page layout----- */
+
+/* page style */
+
+#text-left-side{
+    text-align: left;
+}
+
+.text-below-video {
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    cursor: pointer;
+}
+
+.text-float-right {
+    float: right;
+}
+
+/* end of page style */

@@ -1,0 +1,15 @@
+
+.main-container-myplaylist-page{
+    display: flex;
+    gap: 5rem;
+
+}
+
+.section-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+

@@ -1,0 +1,63 @@
+/* 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .signup-inputs {
+    height: fit-content;
+    padding: 1rem;
+    font-size: small;
+  }
+  
+  .user-link {
+    padding-right: 2rem;
+  }
+   */
+   .signup-page-container{
+    display: flex;
+    justify-content: flex-start;
+   }
+
+
+.signup-page-container>form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  gap: 10px;
+  align-items: center;
+  margin-top: 3rem;
+  border: 1px solid;
+  width: 30%;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 33%;
+}
+
+input {
+  width: 14rem;
+  border-radius: 10px;
+}
+
+label {
+  padding-right: 2rem;
+}
+
+#signup-btn {
+  border: none;
+  cursor: pointer;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.create-account-btn{
+  border: none;
+  cursor: pointer;
+  width: 15rem;
+  border-radius: 10px;
+}
+
