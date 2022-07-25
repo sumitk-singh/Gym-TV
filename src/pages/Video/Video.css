@@ -1,28 +1,30 @@
 /* video page layout */
 
-.video-page-main-section{
+.video-page-main-section {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "section-1 section-2";
+    grid-template-areas:
+        "section-1 section-1"
+        "section-2 section-2";
 }
 
-.video-page-section-1{
+.video-page-section-1 {
     grid-area: section-1;
-    margin-left: 1rem;
-   
+    margin-left: 5rem;
+    width: auto;
 }
 
-.video-page-section-2{
+.video-page-section-2 {
     margin-left: 5rem;
     grid-area: section-2;
     margin-bottom: 1rem;
-    
+
 }
 
-.video-page-section-2{
+.video-page-section-2 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -30,16 +32,17 @@
 
 /* page style */
 
-#text-left-side{
+#text-left-side {
     text-align: left;
 }
 
 .text-below-video {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
+    justify-content: flex-start;
 }
 
-span{
+span {
     cursor: pointer;
 }
 
