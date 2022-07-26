@@ -3,12 +3,7 @@ import { videoData } from "../backend/db/videoData";
 
 // Creating context
 const playlistContext = createContext();
-
-
-
 function addVideoToPlaylist(state, action) {
-
-
   
   let newPlaylist = [...state.playlist];
   const isPresent = state.playlist.some(

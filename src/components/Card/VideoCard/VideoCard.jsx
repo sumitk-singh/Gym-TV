@@ -23,7 +23,7 @@ const Card = ({ title, id, xDaysAgo, views, thumbnail, type, video }) => {
             <button id="btn-primary" style={{
               width: "18vh"
             }}><i class="fa fa-play-circle" ></i>
-              Watch Now</button>
+               Watch Now</button>
           </Link>
           <button id="btn-secondary"
             onClick={() =>
