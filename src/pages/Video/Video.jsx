@@ -25,7 +25,7 @@ const Video = () => {
     height: sizeOfWindow > 900 ? "550" : "300",
     width: "100%",
     playerVars: {
-      autoplay: 1
+      autoplay: 0
     }
   };
 

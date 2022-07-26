@@ -19,7 +19,7 @@ const History = () => {
 
                 <section className='section-b'>
                     
-                    <h2>History <span className='float-right'><button>Clear Full History</button></span></h2>
+                    <h2>History </h2>
                     
                     <section className='history-page-section-1'>
                         

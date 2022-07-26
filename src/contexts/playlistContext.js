@@ -3,26 +3,7 @@ import { videoData } from "../backend/db/videoData";
 
 // Creating context
 const playlistContext = createContext();
-function addVideoToPlaylist(state, action) {
-  
-  let newPlaylist = [...state.playlist];
-  const isPresent = state.playlist.some(
-    (playlist) => playlist.id === action.payload.video.id
-  );
-  if (isPresent) {
-    newPlaylist = newPlaylist.map((video) => {
-      if (video.id === action.payload.video.id) {
-        const videoWithIncreased = { ...video };
-        videoWithIncreased.qty += 1;
-        return videoWithIncreased;
-      }
-      return video;
-    });
-    return newPlaylist;
-  } else {
-    return [...state.playlist, { ...action.payload.video, qty: 1 }];
-  }
-}
+
 
 // Add to like page
 
@@ -45,6 +26,30 @@ function addToLikedVideos(state, action) {
     return [...state.likedVideos, { ...action.payload.video, qty: 1 }];
   }
 }
+
+
+// Add to playlist page
+function addVideoToPlaylist(state, action) {
+
+  let newPlaylist = [...state.playlist];
+  const isPresent = state.playlist.some(
+    (playlist) => playlist.id === action.payload.video.id
+  );
+  if (isPresent) {
+    newPlaylist = newPlaylist.map((video) => {
+      if (video.id === action.payload.video.id) {
+        const videoWithIncreased = { ...video };
+        videoWithIncreased.qty += 1;
+        return videoWithIncreased;
+      }
+      return video;
+    });
+    return newPlaylist;
+  } else {
+    return [...state.playlist, { ...action.payload.video, qty: 1 }];
+  }
+}
+
 
 // Add to watch later 
 
@@ -88,10 +93,11 @@ function addToHistory(state, action) {
     return [...state.history, { ...action.payload.video, qty: 1 }];
   }
 }
+
 export const data = {
+  likedVideos: [],
   playlist: [],
   watchLater: [],
-  likedVideos: [],
   history: []
 };
 
@@ -101,16 +107,19 @@ export const data = {
 export default function PlaylistProvider({ children }) {
   function reducer(state, action) {
     switch (action.type) {
+
       case "ADD_NEW_PLAYLIST":
         return {
           ...state,
           playList: { ...state.playList, [action.payload]: [] }
         };
+
       case "ADD_VIDEO_TO_PLAYLIST":
         return {
           ...state,
           playlist: addVideoToPlaylist(state, action)
         };
+
       case "ADD_TO_LIKEDVIDEOS":
         return {
           ...state,
@@ -158,7 +167,7 @@ export default function PlaylistProvider({ children }) {
         return state;
     }
   }
-  const [{ playlist, watchLater, likedVideos, history }, dispatch] = useReducer(
+  const [{ likedVideos, playlist, watchLater, history }, dispatch] = useReducer(
     reducer,
     data
   );

@@ -2,7 +2,7 @@ import './VideoCard.css';
 import { Link } from "react-router-dom";
 import { usePlaylist } from "../../../contexts/playlistContext";
 
-const Card = ({ title, id, xDaysAgo, views, thumbnail, type, video }) => {
+const Card = ({ title, id, thumbnail, type, video }) => {
 
   const { playlistDispatch } = usePlaylist();
 
@@ -13,7 +13,7 @@ const Card = ({ title, id, xDaysAgo, views, thumbnail, type, video }) => {
         <img src={thumbnail} alt="" />
         <div className="card-text">
           <h3>{title}</h3>
-          <p>{views} views </p>
+         
         </div>
         <div id='video-card-btn'>
           <Link

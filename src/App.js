@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import { Home, Explore, Video, WatchLater, History, LikedVideos, MyPlaylist } from './pages/index.js';
+import { Home, Explore, Video, WatchLater, History, LikedVideos, PlayList } from './pages/index.js';
 import { Login, SignUp } from '../src/pages/Auth/index.js';
 
 import { RequiresAuth } from "./RequiresAuth";
@@ -66,10 +66,10 @@ function App() {
         />
 
         <Route
-          path="/myplaylist"
+          path="/playlist"
           element={
             <RequiresAuth>
-              <MyPlaylist />
+              <PlayList />
             </RequiresAuth>
           }
         />

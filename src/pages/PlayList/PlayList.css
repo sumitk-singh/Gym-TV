@@ -13,3 +13,7 @@
     margin-top: 1rem;
 }
 
+.playlist-page-section-1{
+    display: flex;
+    flex-wrap: wrap;
+}
