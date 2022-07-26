@@ -91,7 +91,7 @@ const Video = () => {
 
 
 
-// working here from morning 25-7-2022 to add the playlist feature
+//---
                 onClick={() =>
                   playlistDispatch({
                     type: "ADD_VIDEO_TO_PLAYLIST",
