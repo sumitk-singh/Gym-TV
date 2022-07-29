@@ -16,6 +16,7 @@
 - Video Listing Page
 - Like/Dislike
 - Watch Later
+- Playlist
 - History
 - Authentication
 
