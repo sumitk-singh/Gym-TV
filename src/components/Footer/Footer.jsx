@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div>
-        <p>© 2022 | GYMTV</p>
+        <p>© 2022 | GYM-TV</p>
        
         <p>
           Made with{" "}
