@@ -6,6 +6,10 @@ import { usePlaylist } from "../../contexts/playlistContext";
 import { useState } from "react";
 import YouTube from "react-youtube";
 
+// toast
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+//-----
 
 const Video = () => {
   const [sizeOfWindow, setSizeOfWindow] = useState(window.innerWidth);
@@ -34,6 +38,10 @@ const Video = () => {
     setSizeOfWindow(window.innerWidth);
   };
 
+  const notifyForPlaylist = () => toast("Added to playlist");
+  const notifyForWatchLater = () => toast("Added to watch later");
+  const notifyForLike = () => toast("You liked it");
+  const notifyForDislike = () => toast("You disliked it");
 
   return (
     <>
@@ -61,27 +69,32 @@ const Video = () => {
             <span>
               <i className="fa fa-thumbs-up"
 
-                onClick={() =>
+                onClick={() =>{
                   playlistDispatch({
                     type: "ADD_TO_LIKEDVIDEOS",
                     payload: { video }
-                  })
+                  });
+                  notifyForLike();
                 }
+              }
               >
               </i>
-              Like
+              
             </span>{" "}
             <span>
-              <i className="fa fa-thumbs-down" />
-              Dislike
+              <i className="fa fa-thumbs-down" onClick={()=>notifyForDislike()}> 
+              </i>
             </span>{" "}
             <span>
               <i className="fa fa-heart"
-                onClick={() =>
+                onClick={() =>{
                   playlistDispatch({
                     type: "ADD_TO_WATCHLATER",
                     payload: { video }
-                  })
+                  });
+                  notifyForWatchLater();
+                
+                }
                 }
               >
               </i> Add To Watch Later
@@ -92,14 +105,17 @@ const Video = () => {
 
 
 //---
-                onClick={() =>
+                onClick={() =>{
                   playlistDispatch({
                     type: "ADD_VIDEO_TO_PLAYLIST",
                     payload: { video }
-                  })
-                }
+                  });
+                  notifyForPlaylist();
 
-              > </i> Add To Playlist
+                }
+              
+              }
+              ></i> Add To Playlist
             </span>{" "}
             
           </p>

@@ -15,14 +15,7 @@ const Card = ({ title, id, thumbnail, type, video }) => {
 
   const { playlistDispatch } = usePlaylist();
 
-  const playlistDispatchAndToastHandler = () => {
-    playlistDispatch({
-      type: type,
-      payload: { video }
-    });
 
-    notify();
-  }
 
   return (
 
@@ -46,7 +39,12 @@ const Card = ({ title, id, thumbnail, type, video }) => {
           <button id="btn-secondary"
             onClick={
               () => {
-                playlistDispatchAndToastHandler()
+                playlistDispatch({
+                  type: type,
+                  payload: { video }
+                });
+            
+                notify();
               }
             }
 
